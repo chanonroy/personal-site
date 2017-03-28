@@ -1,0 +1,13 @@
+.panel {
+  padding: 100px 0;
+
+  &--bottom {
+    padding: 100px 0 0 0;
+  }
+}
+
+.building {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+}
