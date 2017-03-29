@@ -26,6 +26,10 @@
     text-align: center;
   }
 
+  &--projects {
+    text-align: center;
+  }
+
 }
 
 .jumbo {
@@ -47,6 +51,13 @@
 
   h3 {
     font-size: 1.5em;
+  }
+
+  i {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    color: darken(white, 5%);
+    &:hover { color: white; opacity: 1;}
   }
 
 }

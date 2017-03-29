@@ -13,7 +13,13 @@
      <div id="app">
 
        <div class="jumbo">
-         <h2> I like building things and cooking excellent food</h2>
+         <h3>
+           <a href="https://linkedin.com/in/chanonroy" target="_blank"> <i class="fa fa-linkedin-square fa-3x fa-fw" aria-hidden="true"></i> </a>
+           <a href="https://github.com/chanonroy" target="_blank"> <i class="fa fa-github fa-3x fa-fw" aria-hidden="true"></i></a>
+           <a href="https://codepen.io/chanonroy/" target="_blank"> <i class="fa fa-codepen fa-3x fa-fw" aria-hidden="true"></i></a>
+           <a href="https://dribbble.com/chanonroy" target="_blank"> <i class="fa fa-dribbble fa-3x fa-fw" aria-hidden="true"></i></a>
+         </h3>
+         <h2> Front-End Developer </h2>
          <h3> Currently living in Ottawa, Canada </h3>
        </div>
 
@@ -29,14 +35,14 @@
                 <img src="dist/assets/roy.svg" alt="Roy">
               </el-col>
               <el-col :lg="16">
-                <h1> About Me </h1>
+                <h1> About me </h1>
                 <p class="text-muted">
                   I'm a sociable and enthusiastic web developer with experience working in the modern front-end world and alongside popular
                   server side frameworks such as <b> <a href="https://www.djangoproject.com/" target="_blank"> Django </a> </b> (Python) and <b><a href="https://expressjs.com/" target="_blank"> Express.js </a></b> (Node).
                 </p>
                 <p class="text-muted">
                   The core of my work consists of figuring out how to automate the boring stuff
-                  at scale while also dazzling users with a fantastic interactive experience. Currently, I am a developer at <b> <a href="http://www.repable.com"  target="_blank"> Repable </a></b>.
+                  at scale while also dazzling users with a fantastic interactive experience. Currently, I am a Front-End Developer at <b> <a href="http://www.repable.com"  target="_blank"> Repable </a></b>.
                 </p>
               </el-col>
 
@@ -46,11 +52,11 @@
 
        <div class="panel">
          <div class="container container--skills">
-           <h1> Things that I do </h1>
+           <h1> Some of my skills </h1>
 
            <el-row :gutter="10">
              <el-col :lg="8">
-               <img src="dist/assets/layers.png" alt="">
+               <img class="skills__icon" src="dist/assets/layers.svg" alt="">
                <div class="skills__label"> Design/UX </div>
                <div class="text-muted"> Adobe Suite, Sketch </div>
                <div class="text-muted"> Product Strategy and Research </div>
@@ -58,7 +64,7 @@
                <div class="text-muted"> Testing and Iteration </div>
              </el-col>
              <el-col :lg="8">
-               <img src="dist/assets/browser.png" alt="" style="border-radius: 5px;">
+               <img class="skills__icon" src="dist/assets/browser.svg" alt="" style="border-radius: 5px;">
                <div class="skills__label"> Front-End </div>
                <div class="text-muted"> Responsive Design </div>
                <div class="text-muted"> Dev Tooling (Gulp, Webpack) </div>
@@ -66,7 +72,7 @@
                <div class="text-muted"> Intermediate JavaScript (ES6, Vue, D3) </div>
              </el-col>
              <el-col :lg="8">
-               <img src="dist/assets/database.png" alt="">
+               <img class="skills__icon" src="dist/assets/database.svg" alt="">
                <div class="skills__label"> Back-End </div>
                <div class="text-muted"> Django, Express.js </div>
                <div class="text-muted"> REST API and Web Services </div>
@@ -78,10 +84,51 @@
          </div>
        </div>
 
+       <!-- <div class="panel">
+        <div class="container container--projects">
+
+          <h1> Some of my personal projects </h1>
+          <p> Critics and Flicks (Red) - vue.js </p>
+          <p> Agent Blue (black) - socket.io </p>
+
+        </div>
+       </div> -->
+
+       <div class="panel">
+         <div class="container container--skills">
+           <h1> Some of my hobbies & interests </h1>
+
+           <el-row :gutter="10">
+             <el-col :lg="6">
+               <img class="skills__icon" src="dist/assets/game-controller.svg" alt="">
+               <div class="skills__label"> Gaming </div>
+               <div class="text-muted"> Exploring immersive worlds </div>
+             </el-col>
+             <el-col :lg="6">
+               <img class="skills__icon" src="dist/assets/dish.svg" alt="" style="border-radius: 5px;">
+               <div class="skills__label"> Cooking </div>
+               <div class="text-muted"> Making delicious meals </div>
+             </el-col>
+             <el-col :lg="6">
+               <img class="skills__icon" src="dist/assets/tickets.svg" alt="">
+               <div class="skills__label"> Watching Films </div>
+               <div class="text-muted"> Appreciating great storytelling </div>
+             </el-col>
+             <el-col :lg="6">
+               <img class="skills__icon" src="dist/assets/taoism.svg" alt="">
+               <div class="skills__label"> Philosophy </div>
+               <div class="text-muted"> Pondering big questions </div>
+             </el-col>
+           </el-row>
+
+         </div>
+       </div>
+
        <div class="panel">
         <div class="container">
           <div>Special thanks to
-            <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
+            <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver" target="_blank">Madebyoliver</a> and
+            <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>
             for the icons from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>
           </div>
         </div>

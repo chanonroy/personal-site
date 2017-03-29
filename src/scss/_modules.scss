@@ -18,9 +18,12 @@
 }
 
 .skills {
+  &__icon {
+    height: 100px;
+  }
   &__label {
     margin: 10px 0;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
