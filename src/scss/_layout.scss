@@ -14,10 +14,18 @@
     width: 1170px;
   }
 
-  &__building {
+  &--building {
     display: flex;
     justify-content: flex-end;
   }
+
+  &--skills {
+
+    h1 { margin: 0 0 0 0 }
+    .el-row { margin-top: 100px; }
+    text-align: center;
+  }
+
 }
 
 .jumbo {

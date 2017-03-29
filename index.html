@@ -6,26 +6,91 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="icon" type="image/png" href="dist/assets/roy-face.png" />
      <title> Chanon Roy </title>
-
+     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
      <link rel="stylesheet" type="text/css" href="dist/css/main.css">
    </head>
    <body>
+     <div id="app">
 
-     <div class="jumbo">
-       <h2> I like building things and cooking excellent food</h2>
-       <h3> Currently living in Ottawa, Canada </h3>
-     </div>
-
-     <div class="container container__building">
-       <img class="building" src="dist/assets/ottawa.svg" alt="ottawa">
-     </div>
-
-     <div class="container">
-       <div class="panel panel--top">
-        <img src="dist/assets/roy.png" alt="">
+       <div class="jumbo">
+         <h2> I like building things and cooking excellent food</h2>
+         <h3> Currently living in Ottawa, Canada </h3>
        </div>
-     </div>
 
-     <script type="text/javascript" src=" "></script>
+       <div class="container container--building">
+         <img class="building" src="dist/assets/ottawa.svg" alt="ottawa">
+       </div>
+
+       <div class="panel panel--bottom">
+         <div class="container">
+            <el-row>
+
+              <el-col :lg="8">
+                <img src="dist/assets/roy.svg" alt="Roy">
+              </el-col>
+              <el-col :lg="16">
+                <h1> About Me </h1>
+                <p class="text-muted">
+                  I'm a sociable and enthusiastic web developer with experience working in the modern front-end world and alongside popular
+                  server side frameworks such as <b> <a href="https://www.djangoproject.com/" target="_blank"> Django </a> </b> (Python) and <b><a href="https://expressjs.com/" target="_blank"> Express.js </a></b> (Node).
+                </p>
+                <p class="text-muted">
+                  The core of my work consists of figuring out how to automate the boring stuff
+                  at scale while also dazzling users with a fantastic interactive experience. Currently, I am a developer at <b> <a href="http://www.repable.com"  target="_blank"> Repable </a></b>.
+                </p>
+              </el-col>
+
+            </el-row>
+         </div>
+       </div>
+
+       <div class="panel">
+         <div class="container container--skills">
+           <h1> Things that I do </h1>
+
+           <el-row :gutter="10">
+             <el-col :lg="8">
+               <img src="dist/assets/layers.png" alt="">
+               <div class="skills__label"> Design/UX </div>
+               <div class="text-muted"> Adobe Suite, Sketch </div>
+               <div class="text-muted"> Product Strategy and Research </div>
+               <div class="text-muted"> Rapid Prototyping </div>
+               <div class="text-muted"> Testing and Iteration </div>
+             </el-col>
+             <el-col :lg="8">
+               <img src="dist/assets/browser.png" alt="" style="border-radius: 5px;">
+               <div class="skills__label"> Front-End </div>
+               <div class="text-muted"> Responsive Design </div>
+               <div class="text-muted"> Dev Tooling (Gulp, Webpack) </div>
+               <div class="text-muted"> Scalable CSS (SCSS, BEM) </div>
+               <div class="text-muted"> Intermediate JavaScript (ES6, Vue, D3) </div>
+             </el-col>
+             <el-col :lg="8">
+               <img src="dist/assets/database.png" alt="">
+               <div class="skills__label"> Back-End </div>
+               <div class="text-muted"> Django, Express.js </div>
+               <div class="text-muted"> REST API and Web Services </div>
+               <div class="text-muted"> Authentication and Security </div>
+               <div class="text-muted"> MySQL, MongoDB </div>
+             </el-col>
+           </el-row>
+
+         </div>
+       </div>
+
+       <div class="panel">
+        <div class="container">
+          <div>Special thanks to
+            <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
+            for the icons from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>
+          </div>
+        </div>
+       </div>
+
+     </div> <!-- #app -->
+
+     <script src="https://unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
+     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+     <script src="dist/js/main.js"></script>
    </body>
  </html>

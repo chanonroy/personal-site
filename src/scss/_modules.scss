@@ -2,7 +2,12 @@
   padding: 100px 0;
 
   &--bottom {
-    padding: 100px 0 0 0;
+    background-color: lighten(lightgrey, 7%); // #8dc496
+    // background-color: #8dc496;
+    padding: 50px 0 0 0;
+    img { margin-bottom: -5px; }
+    // h1 { color: white; text-shadow: 0.5px 0.5px grey; }
+    // p { color: darken(white, 5%);  text-shadow: 0.5px 0.5px black; }
   }
 }
 
@@ -10,4 +15,12 @@
   position: absolute;
   bottom: 0;
   height: 300px;
+}
+
+.skills {
+  &__label {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
 }
