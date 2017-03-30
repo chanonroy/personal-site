@@ -13,7 +13,7 @@ var outputDir = './dist/';
 
 // 'gulp clean' - cleans and returns promise
 gulp.task('clean', function() {
-  return del([outputDir]);
+  return del.sync([outputDir]);
 });
 
 // 'gulp styles' - compiles scss, autoprefixes
