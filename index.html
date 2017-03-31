@@ -94,27 +94,43 @@
         </div>
        </div> -->
 
+       <div class="panel panel--contact">
+        <div class="container contact">
+
+          <el-row :gutter="10">
+            <el-col :lg="12" class="contact__text">
+              <h1> Interested in Chatting? </h1>
+              <p> Send me a <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> and let's talk over coffee, tea, or beer </p>
+            </el-col>
+            <el-col :lg="12" class="contact__photo">
+              <img src="dist/assets/drinks.svg" alt="">
+            </el-col>
+          </el-row>
+
+        </div>
+       </div>
+
        <div class="panel">
          <div class="container container--skills">
-           <h1> Some of my hobbies & interests </h1>
+           <h1> Some of my hobbies &amp; interests </h1>
 
            <el-row :gutter="10">
-             <el-col :lg="6">
+             <el-col :lg="6" :sm="12">
                <img class="skills__icon" src="dist/assets/game-controller.svg" alt="">
                <div class="skills__label"> Gaming </div>
                <div class="text-muted"> Exploring immersive worlds </div>
              </el-col>
-             <el-col :lg="6">
+             <el-col :lg="6" :sm="12">
                <img class="skills__icon" src="dist/assets/dish.svg" alt="" style="border-radius: 5px;">
                <div class="skills__label"> Cooking </div>
                <div class="text-muted"> Making delicious meals </div>
              </el-col>
-             <el-col :lg="6">
+             <el-col :lg="6" :sm="12">
                <img class="skills__icon" src="dist/assets/tickets.svg" alt="">
                <div class="skills__label"> Watching Films </div>
                <div class="text-muted"> Appreciating great storytelling </div>
              </el-col>
-             <el-col :lg="6">
+             <el-col :lg="6" :sm="12">
                <img class="skills__icon" src="dist/assets/taoism.svg" alt="">
                <div class="skills__label"> Philosophy </div>
                <div class="text-muted"> Pondering big questions </div>
@@ -124,14 +140,17 @@
          </div>
        </div>
 
-       <div class="panel">
-        <div class="container">
-          <div>Special thanks to
-            <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver" target="_blank">Madebyoliver</a> and
-            <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>
-            for the icons from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>
-          </div>
-        </div>
+       <div class="panel panel--footer">
+         <div class="container">
+           <p>
+             Special thanks to
+             <b><a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver" target="_blank">Madebyoliver</a></b>,
+             <b><a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a></b>, and
+             <b><a href="http://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a></b>
+             for some of the icons above
+           </p>
+           <p> Site Developed by <b> Chanon Roy</b> </p>
+         </div>
        </div>
 
      </div> <!-- #app -->

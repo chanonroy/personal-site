@@ -5,7 +5,28 @@
     background-color: lighten(lightgrey, 7%); // #8dc496
     padding: 50px 0 0 0;
     img { margin-bottom: -5px; }
+  }
 
+  &--contact {
+    margin-top: 150px;
+    padding: 100px 0 0 0;
+    background-color: Tan;
+    p {
+      font-size: 1.2em;
+    }
+    img {
+      position: absolute;
+      height: 250px;
+      bottom: 0;
+    }
+  }
+
+  &--footer {
+    margin-top: 150px;
+    padding: 25px 0;
+    background-color: $color-font;
+    color: $color-soft-grey;
+    text-align: center;
   }
 }
 
@@ -23,5 +44,15 @@
     margin: 10px 0;
     font-weight: bold;
     font-size: 1.4em;
+  }
+}
+
+.contact {
+  &__text {
+    margin-bottom: 100px;
+  }
+  &__photo {
+    display: flex;
+    justify-content: flex-end;
   }
 }
