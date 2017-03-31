@@ -10,12 +10,16 @@
   &--contact {
     margin-top: 150px;
     padding: 100px 0 0 0;
-    background-color: Tan;
+    // color: $color-font;
+    color: white;
+    background-color: #3E5675;
     p {
       font-size: 1.2em;
+      color: lightgrey;
     }
     img {
       position: absolute;
+      margin-left: 50px;
       height: 250px;
       bottom: 0;
     }
@@ -50,6 +54,7 @@
 .contact {
   &__text {
     margin-bottom: 100px;
+    i:nth-child(2) { margin-left: 15px; }
   }
   &__photo {
     display: flex;

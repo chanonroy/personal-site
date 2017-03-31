@@ -31,11 +31,11 @@
          <div class="container">
             <el-row>
 
-              <el-col :lg="8">
+              <el-col :lg="10">
                 <img src="dist/assets/roy.svg" alt="Roy">
               </el-col>
               <el-col :lg="14">
-                <h1> {{ time_greeting }}, friend </h1>
+                <h1 v-cloak> {{ time_greeting }}, friend </h1>
                 <p class="text-muted">
                   My name is Chanon. I'm a sociable and enthusiastic web developer
                   who currently builds things at <b> <a href="http://www.repable.com"  target="_blank"> Repable</a></b>,
@@ -100,10 +100,14 @@
           <el-row :gutter="10">
             <el-col :lg="12" class="contact__text">
               <h1> Interested in Chatting? </h1>
-              <p> Send me a <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> and let's talk over coffee, tea, or beer </p>
+              <p> Send me a message and let's talk over coffee, tea, or beer </p>
+              <p>
+                <i class="fa fa-envelope fa-fw" aria-hidden="true"></i> chanonroy@gmail.com
+                <i class="fa fa-phone fa-fw" aria-hidden="true"></i> +1 (613) 668-8345
+              </p>
             </el-col>
             <el-col :lg="12" class="contact__photo">
-              <img src="dist/assets/drinks.svg" alt="">
+              <img v-cloak src="dist/assets/drinks.svg" alt="">
             </el-col>
           </el-row>
 
