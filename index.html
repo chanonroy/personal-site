@@ -4,13 +4,17 @@
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" type="image/png" href="dist/assets/roy-face.png" />
+     <link rel="icon" type="image/png" href="dist/assets/roy.png" />
      <title> Chanon Roy </title>
      <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
      <link rel="stylesheet" type="text/css" href="dist/css/main.css">
    </head>
    <body>
      <div id="app">
+
+       <div class="container container--building">
+         <img class="building" src="dist/assets/ottawa.svg" alt="ottawa">
+       </div>
 
        <div class="jumbo">
          <h3>
@@ -23,19 +27,15 @@
          <h3> Currently living in Ottawa, Canada </h3>
        </div>
 
-       <div class="container container--building">
-         <img class="building" src="dist/assets/ottawa.svg" alt="ottawa">
-       </div>
-
        <div class="panel panel--bottom">
          <div class="container">
             <el-row>
 
-              <el-col :lg="10">
+              <el-col :lg="10" :md="8" :sm="20">
                 <img src="dist/assets/roy.svg" alt="Roy">
               </el-col>
-              <el-col :lg="14">
-                <h1 v-cloak> {{ time_greeting }}, friend </h1>
+              <el-col :lg="14" :md="16" :sm="20">
+                <h1 v-cloak> {{ time_greeting }}! </h1>
                 <p class="text-muted">
                   My name is Chanon. I'm a sociable and enthusiastic web developer
                   who currently builds things at <b> <a href="http://www.repable.com"  target="_blank"> Repable</a></b>,
@@ -54,8 +54,8 @@
          <div class="container container--skills">
            <h1> Some things that I do </h1>
 
-           <el-row :gutter="10">
-             <el-col :lg="8">
+           <el-row>
+             <el-col :md="8">
                <img class="skills__icon" src="dist/assets/layers.svg" alt="">
                <div class="skills__label"> Design/UX </div>
                <div class="text-muted"> Adobe Suite, Sketch </div>
@@ -63,7 +63,7 @@
                <div class="text-muted"> Rapid Prototyping </div>
                <div class="text-muted"> Testing and Iteration </div>
              </el-col>
-             <el-col :lg="8">
+             <el-col :md="8">
                <img class="skills__icon" src="dist/assets/browser.svg" alt="" style="border-radius: 5px;">
                <div class="skills__label"> Front-End </div>
                <div class="text-muted"> Responsive Design </div>
@@ -71,7 +71,7 @@
                <div class="text-muted"> Scalable CSS (SCSS, BEM) </div>
                <div class="text-muted"> Intermediate JavaScript (ES6, Vue, D3) </div>
              </el-col>
-             <el-col :lg="8">
+             <el-col :md="8">
                <img class="skills__icon" src="dist/assets/database.svg" alt="">
                <div class="skills__label"> Back-End </div>
                <div class="text-muted"> Django, Express.js </div>
@@ -84,29 +84,16 @@
          </div>
        </div>
 
-       <!-- <div class="panel">
-        <div class="container container--projects">
-
-          <h1> Some of my personal projects </h1>
-          <p> Critics and Flicks (Red) - vue.js </p>
-          <p> Agent Blue (black) - socket.io </p>
-
-        </div>
-       </div> -->
-
        <div class="panel panel--contact">
         <div class="container contact">
 
-          <el-row :gutter="10">
-            <el-col :lg="12" class="contact__text">
+          <el-row>
+            <el-col :lg="12" :xs="24" class="contact__text">
               <h1> Interested in Chatting? </h1>
               <p> Send me a message and let's talk over coffee, tea, or beer </p>
-              <p>
-                <i class="fa fa-envelope fa-fw" aria-hidden="true"></i> chanonroy@gmail.com
-                <i class="fa fa-phone fa-fw" aria-hidden="true"></i> +1 (613) 668-8345
-              </p>
+              <p> <i class="fa fa-envelope fa-fw" aria-hidden="true"></i> chanonroy@gmail.com </p>
             </el-col>
-            <el-col :lg="12" class="contact__photo">
+            <el-col :lg="12" :xs="24" class="contact__photo">
               <img v-cloak src="dist/assets/drinks.svg" alt="">
             </el-col>
           </el-row>
